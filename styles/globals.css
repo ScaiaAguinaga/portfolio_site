@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Colors for light theme (default) */
+:root {
+  --background: #f9fafb;
+  --foreground: #e5e7eb;
+  --compliment: #111827;
+  --compliment-two: #1f2937;
+}
+
+/* Colors for dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827;
+    --foreground: #1f2937;
+    --compliment: #f9fafb;
+    --compliment-two: #e5e7eb;
+  }
+}
+
+/* Registers styles as tokens */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-compliment: var(--compliment);
+  --color-compliment-two: var(--compliment-two);
+
+  --color-gundam-white: #ffffff;
+  --color-gundam-blue: #0d4ba0;
+  --color-gundam-red: #e01a22;
+  --color-gundam-yellow: #ffcc00;
+
+  /* fonts */
+  --font-inter: var(--font-inter);
+  --font-orbitron: var(--font-orbitron);
+}
