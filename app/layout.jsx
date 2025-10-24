@@ -19,7 +19,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${orbitron.variable} antialiased bg-background`}>
+      <body
+        className={`${inter.variable} ${orbitron.variable} bg-background antialiased`}
+      >
         {children}
       </body>
     </html>
