@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionHeader = ({ num, title }) => {
   return (
-    <div className="flex w-full items-center gap-4 pb-8">
+    <div className="flex w-full items-center gap-4 py-8">
       <h1 className="font-orbitron text-compliment-two text-[40px] whitespace-nowrap">
         [ {num} // <span className="text-gundam-blue font-bold">{title}</span> ]
       </h1>
