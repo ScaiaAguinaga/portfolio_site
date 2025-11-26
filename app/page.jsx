@@ -1,8 +1,6 @@
 import SectionHeader from "@/components/SectionHeader";
 import ProjectShowcase from "@/components/ProjectShowcase";
-import FrameOne from "@/components/svgs/FrameOne";
-import FrameTwo from "@/components/svgs/FrameTwo";
-import FrameThree from "@/components/svgs/FrameThree";
+
 import pattern from "@/public/images/pattern.webp";
 
 export default function Home() {
@@ -19,9 +17,16 @@ export default function Home() {
         <div className="mx-auto flex max-w-[1200px] flex-col items-center">
           <SectionHeader num={"01"} title={"PROJECTS"} />
           <div className="flex w-full max-w-[964px] flex-col">
-            <FrameOne className="text-gundam-blue" strokeWidth={2} />
-            <FrameTwo className="text-gundam-blue -my-[6px]" strokeWidth={2} />
-            <FrameThree className="text-gundam-blue" strokeWidth={2} />
+            {/* Project 1 */}
+            <div className="">
+              <ProjectShowcase variant="frameOne" reversed={false}/>
+            </div>
+            {/* Project 2 */}
+            <div className="">
+              <ProjectShowcase variant="frameTwo" reversed={true}/>
+            </div>
+            {/* Project 3 */}
+            <ProjectShowcase variant="frameThree" reversed={false}/>
           </div>
         </div>
       </section>

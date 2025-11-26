@@ -1,7 +1,7 @@
 export default function FrameOne({
   className = "",
-  strokeWidth = 2, // outline thickness (CSS pixels)
-  nonScalingStroke = true, // keep stroke width constant when scaled
+  strokeWidth = 2,
+  nonScalingStroke = true,
 }) {
   return (
     <svg
@@ -11,7 +11,7 @@ export default function FrameOne({
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
-      {/* little dots — use currentColor so Tailwind text-* controls color */}
+      {/* dot accents */}
       <rect x="800" y="318" width="6" height="6" rx="3" fill="#0D4BA0" />
       <rect x="96" y="318" width="6" height="6" rx="3" fill="#0D4BA0" />
       <rect y="222" width="6" height="6" rx="3" fill="#0D4BA0" />

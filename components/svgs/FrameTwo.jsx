@@ -12,7 +12,7 @@ export default function FrameTwo({
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
-      {/* little dots — use currentColor so Tailwind text-* controls color */}
+      {/* dot accents */}
       <rect
         width="6"
         height="6"

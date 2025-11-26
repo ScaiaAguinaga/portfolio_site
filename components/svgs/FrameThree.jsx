@@ -11,7 +11,7 @@ export default function FrameThree({
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
-      {/* little dots — use currentColor so Tailwind text-* controls color */}
+      {/* dot accents */}
       <rect x="800" y="320" width="6" height="6" rx="3" fill="#0D4BA0" />
       <rect x="96" y="320" width="6" height="6" rx="3" fill="#0D4BA0" />
       <rect x="160" width="6" height="6" rx="3" fill="#0D4BA0" />
