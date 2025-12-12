@@ -4,6 +4,7 @@ import FrameThree from "./svgs/FrameThree";
 import ImageFrame from "./svgs/ImageFrame";
 
 const ProjectShowcase = ({ variant = "frameOne", reversed = false }) => {
+  // Dynamically loads frame components
   const FRAME_COMPONENTS = {
     frameOne: FrameOne,
     frameTwo: FrameTwo,
@@ -30,9 +31,13 @@ const ProjectShowcase = ({ variant = "frameOne", reversed = false }) => {
         className={`${reversed ? "flex-row-reverse" : "flex-row"} flex h-[320px] w-[960px]`}
       >
         {/* Project image */}
-        <div className={`flex h-full w-[519px] justify-center align-middle`}>
-          <ImageFrame className="text-gundam-blue w-[457px]" strokeWidth={2} />
+        <div className={`flex h-full w-[519px] items-center justify-center`}>
+          <ImageFrame
+            className="text-gundam-blue h-[258px] w-[457px]"
+            strokeWidth={2}
+          />
         </div>
+
         {/* Project text */}
         <div className={`h-full w-[441px] flex-shrink-0`}>HELLO</div>
       </div>

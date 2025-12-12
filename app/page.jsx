@@ -18,15 +18,11 @@ export default function Home() {
           <SectionHeader num={"01"} title={"PROJECTS"} />
           <div className="flex w-full max-w-[964px] flex-col">
             {/* Project 1 */}
-            <div className="">
-              <ProjectShowcase variant="frameOne" reversed={false}/>
-            </div>
+            <ProjectShowcase variant="frameOne" reversed={false} />
             {/* Project 2 */}
-            <div className="">
-              <ProjectShowcase variant="frameTwo" reversed={true}/>
-            </div>
+            <ProjectShowcase variant="frameTwo" reversed={true} />
             {/* Project 3 */}
-            <ProjectShowcase variant="frameThree" reversed={false}/>
+            <ProjectShowcase variant="frameThree" reversed={false} />
           </div>
         </div>
       </section>
